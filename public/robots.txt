@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# PLACEHOLDER DOMAIN — replace with the real production URL once decided.
-Sitemap: https://YOUR-DOMAIN-HERE.example/sitemap.xml
+Sitemap: https://pakistansalarytaxcalculator.vercel.app/sitemap.xml
