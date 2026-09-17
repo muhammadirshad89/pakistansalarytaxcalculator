@@ -1,0 +1,47 @@
+{
+  "taxYear": "2026-27",
+  "displayLabel": "Tax Year 2027 (1 July 2026 – 30 June 2027)",
+  "category": "salaried",
+  "currency": "PKR",
+  "effectiveFrom": "2026-07-01",
+  "effectiveTo": "2027-06-30",
+
+  "salariedDefinition": {
+    "condition": "Salary income exceeds 75% of total taxable income",
+    "thresholdPercent": 75
+  },
+
+  "slabs": [
+    { "minIncome": 0,       "maxIncome": 600000,   "rate": 0.00, "fixedAmount": 0 },
+    { "minIncome": 600000,  "maxIncome": 1200000,  "rate": 0.01, "fixedAmount": 0 },
+    { "minIncome": 1200000, "maxIncome": 2200000,  "rate": 0.11, "fixedAmount": 6000 },
+    { "minIncome": 2200000, "maxIncome": 3200000,  "rate": 0.20, "fixedAmount": 116000 },
+    { "minIncome": 3200000, "maxIncome": 4100000,  "rate": 0.25, "fixedAmount": 316000 },
+    { "minIncome": 4100000, "maxIncome": 5600000,  "rate": 0.29, "fixedAmount": 541000 },
+    { "minIncome": 5600000, "maxIncome": 7000000,  "rate": 0.32, "fixedAmount": 976000 },
+    { "minIncome": 7000000, "maxIncome": null,      "rate": 0.35, "fixedAmount": 1424000 }
+  ],
+
+  "surcharge": {
+    "rate": 0,
+    "note": "Surcharge abolished for Tax Year 2027 under Finance Act 2026, amending Section 4AB of the Income Tax Ordinance, 2001."
+  },
+
+  "residencyScope": {
+    "supported": ["resident"],
+    "note": "Non-resident salaried tax treatment is not yet verified and is not supported by this calculator."
+  },
+
+  "deductionsAndCredits": {
+    "supported": [],
+    "note": "Zakat, approved pension fund contributions, and the teacher/researcher tax reduction are not yet implemented. They may reduce a user's actual tax liability below this estimate."
+  },
+
+  "legalSource": {
+    "law": "Finance Act 2026",
+    "clause": "Section 6(44)(a)(i), amending the First Schedule, Part I, Division I, clause (2) of the Income Tax Ordinance, 2001",
+    "gazetteDate": "2026-06-26",
+    "url": "https://www.fbr.gov.pk/Budget2026-27/FinanceAct.html",
+    "lastVerified": "2026-09-16"
+  }
+}
