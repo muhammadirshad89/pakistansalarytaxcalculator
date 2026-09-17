@@ -13,6 +13,8 @@ import HowTaxIsCalculated from './components/HowTaxIsCalculated.jsx';
 import TaxSlabsTable from './components/TaxSlabsTable.jsx';
 import ExampleCalculation from './components/ExampleCalculation.jsx';
 import FaqSection from './components/FaqSection.jsx';
+import UnderstandingSalaryTax from './components/UnderstandingSalaryTax.jsx';
+import SalaryTaxExamples from './components/SalaryTaxExamples.jsx';
 
 function App() {
   // `result` is whatever calculateSalaryTax() last returned — this
@@ -75,9 +77,13 @@ function App() {
 
         <HowTaxIsCalculated />
 
+        <UnderstandingSalaryTax />
+
         <TaxSlabsTable />
 
         <ExampleCalculation />
+
+        <SalaryTaxExamples />
 
         <FaqSection />
 

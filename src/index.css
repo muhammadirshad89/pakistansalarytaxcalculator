@@ -635,6 +635,37 @@ footer.site-footer {
   line-height: 1.6;
 }
 
+.glossary-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
+}
+
+.glossary-item h3 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0 0 6px;
+}
+
+.glossary-item p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.salary-examples-table {
+  min-width: 640px;
+}
+
+@media (max-width: 700px) {
+  .glossary-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 560px) {
   .tax-slabs-table {
     font-size: 13.5px;

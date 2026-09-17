@@ -175,5 +175,60 @@ export const text = {
       otherIncomeAnswer:
         'No. This calculator currently covers salaried individuals only. Business income, freelance/export income, capital gains, and other income heads are not supported yet.',
     },
+
+    understanding: {
+      heading: 'Understanding Your Salary & Tax in Pakistan',
+      intro:
+        'Before using this salary tax calculator, it helps to understand a few basic salary and tax terms used in Pakistan. Here is a simple explanation of each, in plain English.',
+      terms: [
+        {
+          term: 'Gross Salary',
+          definition:
+            'Gross salary is your total salary before any tax or deductions are subtracted — the full amount agreed with your employer, including basic pay and any taxable allowances.',
+        },
+        {
+          term: 'Annual Salary',
+          definition:
+            'Annual salary is your total salary for the full year. If you are paid monthly, your annual salary is simply your monthly salary multiplied by 12 — and salary tax 2026-27 is calculated on this annual figure, not on a single month\'s pay.',
+        },
+        {
+          term: 'Taxable Income',
+          definition:
+            'Taxable income is the portion of your annual salary that tax is actually calculated on — generally your gross annual salary plus any taxable bonus or allowances. This is the figure that determines taxable income Pakistan tax slabs apply to.',
+        },
+        {
+          term: 'Salary Income Tax',
+          definition:
+            'Salary income tax is the income tax on salary that a salaried person owes, charged on taxable income under the Income Tax Ordinance, 2001, using the rates announced for each tax year. This calculator estimates Pakistan salary tax using the current officially notified slabs.',
+        },
+        {
+          term: 'Monthly Tax vs Annual Tax',
+          definition:
+            'Annual tax is the total income tax owed for the full tax year, calculated on annual taxable income. Monthly tax shown here is simply that annual figure divided by 12 — it is not calculated separately using a different rate.',
+        },
+        {
+          term: 'Take-Home Salary',
+          definition:
+            'Take-home salary is what an employee actually receives after income tax is subtracted. Actual take-home salary Pakistan employees receive may be slightly lower once employer-side payroll deductions — such as provident fund or EOBI — are also applied, which this calculator does not include.',
+        },
+        {
+          term: 'Progressive Tax Slabs',
+          definition:
+            'Pakistan uses a progressive tax slab system: taxable income is divided into brackets, and each bracket is taxed at its own rate. Only the portion of income within a given slab is taxed at that slab\'s rate, so moving into a higher slab does not increase the tax rate on your entire income.',
+        },
+      ],
+    },
+
+    examples: {
+      heading: 'Salary Tax Examples in Pakistan 2026-27',
+      intro:
+        'Wondering about the tax on a 100,000 salary in Pakistan, or the tax on a 150,000 or 200,000 monthly salary? The table below shows estimated salary tax 2026-27 for a few common monthly salary amounts, calculated using the exact same engine as the calculator above.',
+      columnMonthly: 'Monthly Salary',
+      columnAnnual: 'Annual Salary',
+      columnAnnualTax: 'Estimated Annual Tax',
+      columnMonthlyTax: 'Estimated Monthly Tax',
+      columnTakeHome: 'Estimated Monthly Take-Home',
+      note: 'These examples assume no bonus or other taxable allowances, and a resident salaried individual. Enter your own salary in the calculator above for a personal estimate — actual take-home salary Pakistan employers pay may differ slightly due to provident fund, EOBI, or other payroll deductions not included here.',
+    },
   },
 };
