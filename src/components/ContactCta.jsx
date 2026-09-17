@@ -3,7 +3,7 @@ import WhatsappButton from './WhatsappButton.jsx';
 
 export default function ContactCta() {
   return (
-    <section className="card contact-cta">
+    <section className="card contact-cta" id="contact">
       <h2>{text.contactCta.heading}</h2>
       <p>{text.contactCta.body}</p>
       <WhatsappButton

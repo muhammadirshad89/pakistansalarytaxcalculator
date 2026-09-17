@@ -231,4 +231,187 @@ export const text = {
       note: 'These examples assume no bonus or other taxable allowances, and a resident salaried individual. Enter your own salary in the calculator above for a personal estimate — actual take-home salary Pakistan employers pay may differ slightly due to provident fund, EOBI, or other payroll deductions not included here.',
     },
   },
+
+  nav: {
+    home: 'Calculator',
+    privacyPolicy: 'Privacy Policy',
+    termsAndConditions: 'Terms & Conditions',
+    about: 'About',
+    contact: 'Contact',
+    backToCalculator: '← Back to Calculator',
+  },
+
+  legal: {
+    effectiveDate: '17 September 2026',
+
+    privacyPolicy: {
+      metaTitle: 'Privacy Policy – Pakistan Salary Tax Calculator',
+      metaDescription:
+        'Read the Privacy Policy for Pakistan Salary Tax Calculator, including information about calculator usage, data privacy, cookies, advertising and user choices.',
+      canonical: 'https://pakistansalarytaxcalculator.vercel.app/privacy-policy',
+      h1: 'Privacy Policy',
+      intro: 'This Privacy Policy explains how Pakistan Salary Tax Calculator handles information when you use this website.',
+      sections: [
+        {
+          heading: 'Overview',
+          paragraphs: [
+            'Pakistan Salary Tax Calculator is an independent, informational website that helps salaried individuals in Pakistan estimate their income tax, monthly tax, and take-home salary for a given tax year. It is not an official FBR or Government of Pakistan website or service.',
+          ],
+        },
+        {
+          heading: 'Information You Enter Into the Calculator',
+          paragraphs: [
+            'To produce an estimate, the calculator asks for your salary frequency (monthly or annual), gross salary, an optional annual bonus, optional other taxable allowances, and your residency status. None of these fields ask for your name, CNIC, address, bank details, or any other identifying information, and the calculator does not require any of that to work.',
+          ],
+        },
+        {
+          heading: 'How Calculator Inputs Are Handled',
+          paragraphs: [
+            'All tax calculations on this website run entirely in your own web browser, using JavaScript. The salary figures you enter are not sent to, stored on, or processed by any server or database operated by this website — there is currently no backend, no account system, and no server-side storage of any kind behind this calculator.',
+            'Because nothing is saved, the numbers you enter are lost as soon as you refresh the page, close the tab, or navigate away. If you want to keep a record of a calculation, you will need to note it down or take a screenshot yourself.',
+          ],
+        },
+        {
+          heading: 'Please Avoid Entering Unnecessary Sensitive Information',
+          paragraphs: [
+            'Although calculator inputs are not stored or transmitted, we recommend entering only the salary figures the calculator actually asks for, and avoiding pasting in payslips, CNIC numbers, bank statements, or other sensitive personal documents — the calculator does not need this information to produce an estimate.',
+          ],
+        },
+        {
+          heading: 'Cookies and Website Technologies',
+          paragraphs: [
+            'This website does not currently use cookies, browser local storage, or any tracking or analytics technology to identify or follow visitors. The only third-party technical resource currently loaded by this website is Google Fonts (used to display the site\'s typefaces), which may cause your browser to make a request to Google\'s font-delivery servers when the page loads, in line with Google\'s own practices for that service.',
+            'This website is hosted using Vercel, which may process standard technical information (such as IP address, browser type, and request logs) purely as part of delivering the website to your browser, in line with Vercel\'s own hosting and privacy practices — this website itself does not access or store this information separately.',
+          ],
+        },
+        {
+          heading: 'Advertising (Google AdSense) Disclosure',
+          paragraphs: [
+            'This website does not currently display Google AdSense or any other advertising. If advertising services such as Google AdSense are enabled on this website in the future, third-party vendors may use cookies or similar technologies to provide, personalize, measure, or improve advertising, subject to their applicable policies and your choices.',
+            'If that happens, personalized advertising choices may be available to you through Google\'s Ads Settings, and this Privacy Policy will be updated to describe the change before or at the time it takes effect.',
+          ],
+        },
+        {
+          heading: 'Third-Party Services',
+          paragraphs: [
+            'Beyond Google Fonts and standard website hosting through Vercel, described above, this website does not currently integrate any other third-party analytics, advertising, payment, or data-processing services. If that changes, this section will be updated to accurately reflect any new service in use.',
+          ],
+        },
+        {
+          heading: "Children's Privacy",
+          paragraphs: [
+            'This website is a general-audience financial information tool and is not directed at children. It does not knowingly collect any information from children, in line with the fact that it does not collect personal information from any visitor.',
+          ],
+        },
+        {
+          heading: 'Changes to This Policy',
+          paragraphs: [
+            'This Privacy Policy may be updated from time to time — for example, if new features, tools, or advertising services are added to the website. Any changes will be reflected on this page along with an updated effective date.',
+          ],
+        },
+        {
+          heading: 'Contact Us',
+          paragraphs: [
+            'If you have any questions about this Privacy Policy, you can contact Syyed Irshad Aslam, the developer of this website, via WhatsApp or phone at +92 321 8100537.',
+          ],
+        },
+      ],
+    },
+
+    termsAndConditions: {
+      metaTitle: 'Terms & Conditions – Pakistan Salary Tax Calculator',
+      metaDescription:
+        'Read the Terms & Conditions for using Pakistan Salary Tax Calculator, including calculator estimates, user responsibilities, limitations and website usage.',
+      canonical: 'https://pakistansalarytaxcalculator.vercel.app/terms-and-conditions',
+      h1: 'Terms & Conditions',
+      intro: 'Please read these Terms & Conditions carefully before using Pakistan Salary Tax Calculator.',
+      sections: [
+        {
+          heading: 'Introduction',
+          paragraphs: [
+            'These Terms & Conditions govern your use of Pakistan Salary Tax Calculator (this "website"). By using this website, you agree to these terms. If you do not agree with any part of these terms, please do not use this website.',
+          ],
+        },
+        {
+          heading: 'Use of the Website',
+          paragraphs: [
+            'This website provides a free, browser-based calculator that estimates salary income tax, monthly tax, and take-home salary for salaried individuals in Pakistan, along with related educational content about how Pakistani salary tax works.',
+          ],
+        },
+        {
+          heading: 'Calculator Estimates',
+          paragraphs: [
+            'All figures produced by this calculator — including annual taxable income, estimated annual tax, estimated monthly tax, effective tax rate, and estimated take-home salary — are estimates provided for general informational purposes only. They are not a substitute for an official tax calculation, a payslip, or a filed tax return.',
+          ],
+        },
+        {
+          heading: 'Accuracy and Tax Responsibility',
+          paragraphs: [
+            'Tax calculations may depend on applicable Pakistani tax laws, rules, amendments, exemptions, deductions, and individual circumstances that this calculator does not account for. While reasonable care is taken to keep the tax rules used by this calculator accurate and up to date, no guarantee is made that every calculation will be correct, current, or suitable for every individual tax situation.',
+            'You are responsible for independently verifying applicable tax rules — directly with the Federal Board of Revenue (FBR) or a qualified tax professional — before filing a tax return or making any financial decision.',
+          ],
+        },
+        {
+          heading: 'No Professional Tax or Financial Advice',
+          paragraphs: [
+            'Nothing on this website constitutes professional tax, accounting, financial, or legal advice, and this website is not a substitute for consulting a qualified tax practitioner, chartered accountant, or advocate. This website is an independent tool and is not affiliated with, endorsed by, or operated by the FBR or the Government of Pakistan.',
+          ],
+        },
+        {
+          heading: 'User Responsibility',
+          paragraphs: [
+            'You are responsible for the accuracy of the information you enter into the calculator, and for how you choose to use the results it produces. Any decisions you make based on this website are made at your own discretion and risk.',
+          ],
+        },
+        {
+          heading: 'Acceptable Use',
+          paragraphs: [
+            'You agree not to misuse this website — for example, by attempting to disrupt its normal operation, attempting unauthorized access to any part of it, or using it in any way that violates applicable law.',
+          ],
+        },
+        {
+          heading: 'Intellectual Property',
+          paragraphs: [
+            'The design, layout, original written content, and branding of this website are the property of its developer, Syyed Irshad Aslam, unless otherwise stated. You may use the calculator for personal, non-commercial informational purposes, but may not copy, reproduce, or republish the website\'s content or code without permission.',
+          ],
+        },
+        {
+          heading: 'Third-Party Services and Links',
+          paragraphs: [
+            'This website may reference or link to official third-party resources, such as FBR publications, or may load third-party technical resources such as Google Fonts, as described in the Privacy Policy. This website is not responsible for the content, accuracy, or availability of any third-party website it links to.',
+          ],
+        },
+        {
+          heading: 'Website Availability',
+          paragraphs: [
+            'This website is provided on an "as available" basis. No guarantee is made that the website will be available at all times, free of interruptions, or free of errors.',
+          ],
+        },
+        {
+          heading: 'Limitation of Liability',
+          paragraphs: [
+            'To the fullest extent permitted by applicable law, the developer of this website shall not be liable for any loss, damage, tax penalty, or other consequence arising from your use of, or reliance on, this website or the estimates it produces.',
+          ],
+        },
+        {
+          heading: 'Changes to the Website',
+          paragraphs: [
+            'The tax rules, calculators, content, and features of this website may be updated, added to, or removed at any time — for example, when applicable Pakistani tax rules change, or when a new tax year begins.',
+          ],
+        },
+        {
+          heading: 'Changes to These Terms',
+          paragraphs: [
+            'These Terms & Conditions may be updated from time to time. Continued use of this website after any changes are published constitutes acceptance of the updated terms.',
+          ],
+        },
+        {
+          heading: 'Contact Information',
+          paragraphs: [
+            'If you have any questions about these Terms & Conditions, you can contact Syyed Irshad Aslam, the developer of this website, via WhatsApp or phone at +92 321 8100537.',
+          ],
+        },
+      ],
+    },
+  },
 };

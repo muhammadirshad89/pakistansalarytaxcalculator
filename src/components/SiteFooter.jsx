@@ -1,9 +1,18 @@
 import { text } from '../text/en.js';
 import WhatsappButton from './WhatsappButton.jsx';
+import { Link } from '../router/Link.jsx';
 
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
+      <nav className="footer-nav" aria-label="Footer">
+        <Link to="/">{text.nav.home}</Link>
+        <Link to="/#about">{text.nav.about}</Link>
+        <Link to="/#contact">{text.nav.contact}</Link>
+        <Link to="/privacy-policy">{text.nav.privacyPolicy}</Link>
+        <Link to="/terms-and-conditions">{text.nav.termsAndConditions}</Link>
+      </nav>
+
       <div className="site-footer-inner">
         <div className="footer-credit">
           <p>
