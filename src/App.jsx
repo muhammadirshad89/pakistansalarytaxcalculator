@@ -8,6 +8,11 @@ import CalculationBreakdown from './components/CalculationBreakdown.jsx';
 import AboutSection from './components/AboutSection.jsx';
 import ContactCta from './components/ContactCta.jsx';
 import SiteFooter from './components/SiteFooter.jsx';
+import SeoIntro from './components/SeoIntro.jsx';
+import HowTaxIsCalculated from './components/HowTaxIsCalculated.jsx';
+import TaxSlabsTable from './components/TaxSlabsTable.jsx';
+import ExampleCalculation from './components/ExampleCalculation.jsx';
+import FaqSection from './components/FaqSection.jsx';
 
 function App() {
   // `result` is whatever calculateSalaryTax() last returned — this
@@ -65,6 +70,16 @@ function App() {
             </p>
           </div>
         </div>
+
+        <SeoIntro />
+
+        <HowTaxIsCalculated />
+
+        <TaxSlabsTable />
+
+        <ExampleCalculation />
+
+        <FaqSection />
 
         <AboutSection />
 

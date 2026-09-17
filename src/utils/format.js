@@ -46,3 +46,19 @@ export function describeSlabRange(slab) {
   }
   return `${formatPKR(slab.minIncome + 1)} – ${formatPKR(slab.maxIncome)}`;
 }
+
+/**
+ * Builds a human-readable formula for a slab, e.g.
+ * "Rs. 6,000 + 11% of amount exceeding Rs. 1,200,000" or "0%".
+ * Reads only the slab's own fields — never hardcodes a rate or amount.
+ */
+export function describeSlabFormula(slab) {
+  if (slab.rate === 0) {
+    return '0%';
+  }
+  const ratePart = `${formatPercent(slab.rate, { decimals: 0 })} of amount exceeding ${formatPKR(slab.minIncome)}`;
+  if (!slab.fixedAmount) {
+    return ratePart;
+  }
+  return `${formatPKR(slab.fixedAmount)} + ${ratePart}`;
+}

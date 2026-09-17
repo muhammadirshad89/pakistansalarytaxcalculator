@@ -110,4 +110,70 @@ export const text = {
     whatsappLabel: 'WhatsApp',
     whatsappMessage: "Hi Irshad, I'm reaching out from your Pakistan Salary Tax Calculator website.",
   },
+
+  seo: {
+    intro: {
+      heading: 'Pakistan Salary Tax Calculator 2026-27',
+      body: (taxYearLabel) =>
+        `This Pakistan Salary Tax Calculator estimates salary income tax for salaried individuals in Pakistan for ${taxYearLabel}. Enter your monthly or annual salary above to see your estimated annual tax, monthly tax, and take-home salary based on the current salaried tax slabs.`,
+    },
+
+    howCalculated: {
+      heading: 'How Pakistan Salary Tax Is Calculated',
+      points: [
+        'If you enter a monthly salary, it is first converted to an annual figure by multiplying it by 12 — Pakistan\'s salary tax is calculated on annual taxable income, not a monthly amount.',
+        'Pakistan uses a progressive tax slab system for salaried individuals: income is divided into brackets, and each bracket has its own tax rate.',
+        'Only the portion of your income that falls within a higher slab is taxed at that slab\'s rate — the lower slabs below it are still taxed at their own (lower) rates, not retroactively at the higher one.',
+        'Based on this slab-by-slab calculation, the calculator works out your estimated annual tax, then divides it to show a monthly tax figure and an estimated monthly take-home salary.',
+      ],
+    },
+
+    slabs: {
+      heading: 'Pakistan Salary Tax Slabs 2026-27',
+      columnIncome: 'Annual Taxable Income',
+      columnCalculation: 'Tax Calculation',
+      sourceNote:
+        'Source: Federal Board of Revenue (FBR) / Finance Act 2026. Tax rules may change; verify applicable rules before filing.',
+    },
+
+    example: {
+      heading: 'Example of Salary Tax Calculation',
+      intro: (monthlySalary) =>
+        `Consider a salaried individual earning ${monthlySalary} per month, with no bonus or other taxable allowances.`,
+      annualSalaryLine: (annual) => `Annual salary: ${annual}`,
+      slabLine: (slabRange, formula) =>
+        `This falls in the ${slabRange} slab, calculated as: ${formula}.`,
+      annualTaxLine: (tax) => `Estimated annual tax: ${tax}`,
+      monthlyTaxLine: (tax) => `Estimated monthly tax: ${tax}`,
+      note: 'This example is for illustration only — it is calculated by the same engine used above, so it will stay accurate if tax rules change. Use the calculator above with your own salary for a personal estimate.',
+    },
+
+    faq: {
+      heading: 'Frequently Asked Questions',
+      taxFreeLimitQuestion: 'What is the tax-free salary limit in Pakistan for 2026-27?',
+      taxFreeLimitAnswer: (limit) =>
+        `Annual taxable salary up to ${limit} is tax-free for Tax Year 2027 under the current salaried tax slabs.`,
+      monthlyOrAnnualQuestion: 'Is salary tax calculated monthly or annually?',
+      monthlyOrAnnualAnswer:
+        "Pakistan's salary tax is calculated on annual taxable income. If you enter a monthly salary, this calculator automatically converts it to an annual figure before applying the tax slabs.",
+      highestRateQuestion: 'What is the highest salaried tax rate for 2026-27?',
+      highestRateAnswer: (rate, threshold) =>
+        `The highest salaried tax rate for Tax Year 2027 is ${rate}, which applies to annual taxable income above ${threshold}.`,
+      autoAnnualQuestion: 'Does entering monthly salary automatically calculate annual salary?',
+      autoAnnualAnswer:
+        'Yes. Selecting "Monthly" and entering your gross monthly salary automatically multiplies it by 12 to determine your annual taxable salary for the calculation.',
+      takeHomeQuestion: 'What is take-home salary?',
+      takeHomeAnswer:
+        "Take-home salary is your salary after income tax is deducted. This calculator's take-home figure does not include EOBI, provident fund, professional tax, or other payroll deductions your employer may apply.",
+      officialQuestion: 'Is this calculator an official FBR calculator?',
+      officialAnswer:
+        'No. This is an independent calculator built to help estimate salary tax and is not an official FBR or Government of Pakistan calculator.',
+      rulesChangeQuestion: 'Can tax rules change during the year?',
+      rulesChangeAnswer:
+        'Yes. Tax laws in Pakistan can be revised through Finance Acts, SROs, or other government notifications. Always verify current rules with FBR or a qualified tax professional before filing.',
+      otherIncomeQuestion: 'Does this calculator cover business income or other income heads?',
+      otherIncomeAnswer:
+        'No. This calculator currently covers salaried individuals only. Business income, freelance/export income, capital gains, and other income heads are not supported yet.',
+    },
+  },
 };
