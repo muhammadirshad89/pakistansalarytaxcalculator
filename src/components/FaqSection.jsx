@@ -60,7 +60,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="card">
+    <section className="card" id="faq">
       <h2>{text.seo.faq.heading}</h2>
       <div className="faq-list">
         {faqs.map((faq, index) => (

@@ -2,7 +2,7 @@ import { text } from '../text/en.js';
 
 export default function HowTaxIsCalculated() {
   return (
-    <section className="card">
+    <section className="card" id="how-calculated">
       <h2>{text.seo.howCalculated.heading}</h2>
       <ul className="info-list">
         {text.seo.howCalculated.points.map((point, index) => (

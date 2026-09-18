@@ -7,8 +7,12 @@
 
 import { navigate } from './router.js';
 
-export function Link({ to, children, ...rest }) {
+export function Link({ to, children, onClick, ...rest }) {
   function handleClick(event) {
+    // Let the caller react to the click (e.g. closing a mobile menu)
+    // before we decide whether to navigate.
+    if (onClick) onClick(event);
+
     const isModifiedClick =
       event.defaultPrevented ||
       event.button !== 0 ||

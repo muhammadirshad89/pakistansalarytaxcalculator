@@ -496,4 +496,63 @@ export const text = {
       websiteName: 'Pakistan Salary Tax Calculator',
     },
   },
+
+  incomeTaxSlabsPage: {
+    metaTitle: 'Pakistan Income Tax Slabs 2026-27 – Tax Year 2027',
+    metaDescription:
+      'View the Pakistan income tax slabs for salaried individuals for Tax Year 2027 (2026-27), with a clear breakdown of each slab, applicable rates and example calculations.',
+    canonical: 'https://pakistansalarytaxcalculator.vercel.app/income-tax-slabs-2026-27',
+    h1: 'Pakistan Income Tax Slabs 2026-27',
+    intro:
+      'This page lists the income tax slabs that apply to salaried individuals in Pakistan for Tax Year 2027 (1 July 2026 – 30 June 2027), with a plain-language explanation of how each slab works and a worked example for every bracket.',
+
+    tableSection: {
+      heading: 'Salaried Individual Tax Slabs for Tax Year 2027',
+      intro:
+        'These are the same slab rates used by the calculator on this website. Tax is progressive: only the portion of your taxable income that falls within a given slab is taxed at that slab\'s rate.',
+      columnRange: 'Taxable Income Range',
+      columnCalculation: 'Tax Calculation',
+      columnRate: 'Tax Rate',
+    },
+
+    readingSection: {
+      heading: 'How to Read the Tax Slab Table',
+      body: "Each row applies only to the portion of your income that falls inside that row's range. If your annual taxable income is, for example, Rs. 1,800,000, you don't pay the third slab's rate on the full amount — you pay nothing on the first Rs. 600,000, 1% on the next slice up to Rs. 1,200,000, and the third slab's rate only on the remaining amount above Rs. 1,200,000. The 'Tax Calculation' column already accounts for this by including a fixed amount carried over from the lower slabs.",
+    },
+
+    slabExamplesSection: {
+      heading: 'Slab-by-Slab Explanation',
+      intro:
+        'To make each slab concrete, here is what the estimated tax works out to for someone whose annual taxable income sits exactly at the top of each bracket, calculated using the same engine as the calculator on this website.',
+      zeroRateLine: (range) => `${range}: no tax is payable at this level of income.`,
+      exampleLine: (range, incomeAtTop, taxAtTop) =>
+        `${range}: someone with an annual taxable income of ${incomeAtTop} (the top of this slab) would pay an estimated ${taxAtTop} in tax.`,
+      openEndedLine: (range, rate) =>
+        `${range}: income in this slab is taxed at a flat ${rate} on the amount above the slab's starting threshold, with no upper limit.`,
+    },
+
+    faqHeading: 'Frequently Asked Questions About Income Tax Slabs',
+
+    cta: {
+      heading: 'Calculate Your Exact Tax',
+      body: 'These slabs show the general structure — enter your own salary in the calculator to see exactly which slab applies to you and what your estimated tax works out to.',
+      buttonLabel: 'Calculate Your Salary Tax',
+    },
+
+    links: {
+      guideText: 'For a full walkthrough of how salary tax is calculated, see our',
+      guideLinkLabel: 'Pakistan Salary Tax 2026-27 guide',
+      privacyText: 'For details on how this calculator handles the information you enter, see our',
+      privacyLinkLabel: 'Privacy Policy',
+      termsText: 'Full terms of use are available in our',
+      termsLinkLabel: 'Terms & Conditions',
+    },
+
+    author: {
+      preparedByLabel: 'Prepared and maintained by',
+      name: 'Syyed Irshad Aslam',
+      websiteLabel: 'Website',
+      websiteName: 'Pakistan Salary Tax Calculator',
+    },
+  },
 };

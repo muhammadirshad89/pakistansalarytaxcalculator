@@ -1,9 +1,11 @@
 import { useRoute } from './router/router.js';
+import SiteHeader from './components/SiteHeader.jsx';
 import SiteFooter from './components/SiteFooter.jsx';
 import HomePage from './pages/HomePage.jsx';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx';
 import TermsAndConditionsPage from './pages/TermsAndConditionsPage.jsx';
 import SalaryTaxGuidePage from './pages/SalaryTaxGuidePage.jsx';
+import IncomeTaxSlabsPage from './pages/IncomeTaxSlabsPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
 // A tiny switch on the current pathname — this is the entire "router
@@ -18,6 +20,8 @@ function renderRoute(pathname) {
       return <TermsAndConditionsPage />;
     case '/salary-tax-2026-27':
       return <SalaryTaxGuidePage />;
+    case '/income-tax-slabs-2026-27':
+      return <IncomeTaxSlabsPage />;
     default:
       return <NotFoundPage />;
   }
@@ -28,6 +32,7 @@ function App() {
 
   return (
     <div className="page">
+      <SiteHeader />
       {renderRoute(pathname)}
       <SiteFooter />
     </div>
