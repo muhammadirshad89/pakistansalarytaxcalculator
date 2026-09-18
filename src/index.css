@@ -24,6 +24,7 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --content-width: 760px;
+  --header-max-width: 1180px;
 }
 
 * {
@@ -66,7 +67,6 @@ select:focus-visible {
 button {
   font-family: inherit;
 }
-
 /* ---------- Site header / navigation ---------- */
 
 .site-header {
@@ -75,64 +75,102 @@ button {
   z-index: 50;
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  box-shadow: 0 1px 3px rgba(28, 43, 34, 0.05);
+  box-shadow: 0 1px 4px rgba(28, 43, 34, 0.06);
+  transition: box-shadow 180ms ease;
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 2px 12px rgba(28, 43, 34, 0.10);
 }
 
 .site-header-inner {
-  max-width: var(--content-width);
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 0 32px;
+  height: 68px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 0;
+  transition: height 180ms ease;
 }
+
+.site-header.is-scrolled .site-header-inner {
+  height: 60px;
+}
+
+/* ── Brand lockup ─────────────────────────────────────────────────── */
 
 .site-header-brand {
   display: flex;
-  flex-direction: column;
-  line-height: 1.2;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
   text-decoration: none;
   color: var(--color-ink);
+  margin-right: auto;
+}
+
+.brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+}
+
+.site-header-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .site-header-title {
   font-family: var(--font-display);
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--color-primary-dark);
+  white-space: nowrap;
 }
 
 .site-header-subtitle {
-  font-size: 11.5px;
+  font-size: 10.5px;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--color-accent);
+  white-space: nowrap;
 }
+
+/* ── Desktop nav ──────────────────────────────────────────────────── */
 
 .site-nav-menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 4px;
 }
 
 .site-nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0;
   margin: 0;
   padding: 0;
 }
 
 .site-nav a {
   display: inline-block;
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  font-size: 14px;
-  font-weight: 600;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--color-ink-soft);
   text-decoration: none;
+  white-space: nowrap;
   transition: background 120ms ease, color 120ms ease;
 }
 
@@ -144,33 +182,43 @@ button {
 .site-nav a.is-active {
   background: var(--color-primary-tint);
   color: var(--color-primary-dark);
+  font-weight: 600;
 }
 
 .nav-cta {
   display: inline-block;
-  padding: 9px 18px;
+  flex-shrink: 0;
+  margin-left: 16px;
+  padding: 8px 18px;
   background: var(--color-primary);
   color: #ffffff !important;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: var(--radius-sm);
+  border-radius: 8px;
   white-space: nowrap;
-  transition: background 120ms ease;
+  transition: background 120ms ease, transform 120ms ease;
 }
 
 .nav-cta:hover {
   background: var(--color-primary-dark);
 }
 
+.nav-cta:active {
+  transform: scale(0.98);
+}
+
+/* ── Hamburger toggle (hidden on desktop) ─────────────────────────── */
+
 .nav-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
   gap: 4px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   padding: 0;
+  flex-shrink: 0;
   background: transparent;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
@@ -179,16 +227,47 @@ button {
 
 .nav-toggle-bar {
   display: block;
-  width: 18px;
+  width: 16px;
   height: 2px;
   margin: 0 auto;
   background: var(--color-ink);
   border-radius: 1px;
 }
 
-@media (max-width: 760px) {
+/* ── Tablet / small-laptop ────────────────────────────────────────── */
+
+@media (min-width: 901px) and (max-width: 1080px) {
+  .site-header-inner {
+    padding: 0 20px;
+  }
+
+  .site-nav a {
+    padding: 6px 8px;
+    font-size: 12.5px;
+  }
+
+  .nav-cta {
+    margin-left: 12px;
+    padding: 7px 14px;
+    font-size: 12.5px;
+  }
+
+  .site-header-subtitle {
+    display: none;
+  }
+}
+
+/* ── Mobile (≤ 900px) ─────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
   .nav-toggle {
     display: flex;
+    margin-left: auto;
+  }
+
+  .site-header-inner {
+    position: relative;
+    padding: 0 20px;
   }
 
   .site-nav-menu {
@@ -200,23 +279,20 @@ button {
     align-items: stretch;
     gap: 0;
     background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
-    box-shadow: 0 4px 10px rgba(28, 43, 34, 0.08);
+    box-shadow: 0 6px 16px rgba(28, 43, 34, 0.10);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 220ms ease;
+    transition: max-height 220ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .site-nav-menu.is-open {
-    max-height: 420px;
-  }
-
-  .site-header-inner {
-    position: relative;
+    max-height: 480px;
   }
 
   .site-nav {
-    padding: 8px 16px 4px;
+    padding: 10px 16px 4px;
   }
 
   .site-nav ul {
@@ -226,12 +302,28 @@ button {
   }
 
   .site-nav a {
-    padding: 12px 10px;
+    display: block;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
   }
 
   .nav-cta {
-    margin: 4px 16px 16px;
+    display: block;
+    margin: 6px 16px 16px;
     text-align: center;
+    font-size: 14px;
+    padding: 11px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header-subtitle {
+    display: none;
+  }
+
+  .site-header-title {
+    font-size: 14px;
   }
 }
 
