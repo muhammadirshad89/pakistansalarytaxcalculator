@@ -7,6 +7,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <nav className="footer-nav" aria-label="Footer">
         <Link to="/">{text.nav.home}</Link>
+        <Link to="/salary-tax-2026-27">Salary Tax Guide</Link>
         <Link to="/#about">{text.nav.about}</Link>
         <Link to="/#contact">{text.nav.contact}</Link>
         <Link to="/privacy-policy">{text.nav.privacyPolicy}</Link>

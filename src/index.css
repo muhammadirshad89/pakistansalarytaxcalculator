@@ -736,6 +736,34 @@ footer.site-footer {
   margin-bottom: 0;
 }
 
+/* ---------- Salary Tax Guide page ---------- */
+
+.howcalc-list li:last-child {
+  font-weight: 400;
+  color: var(--color-ink);
+}
+
+.howcalc-list li:last-child::before {
+  background: var(--color-primary);
+}
+
+.cta-section {
+  text-align: left;
+}
+
+.cta-section p {
+  color: var(--color-ink-soft);
+  margin: 0 0 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .glossary-list {
     grid-template-columns: 1fr;

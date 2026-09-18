@@ -414,4 +414,86 @@ export const text = {
       ],
     },
   },
+
+  salaryTaxGuide: {
+    metaTitle: 'Pakistan Salary Tax 2026-27 – Calculate Salary Income Tax',
+    metaDescription:
+      'Learn how Pakistan salary tax is calculated for 2026-27, view applicable tax slabs, understand taxable income and estimate annual and monthly salary tax.',
+    canonical: 'https://pakistansalarytaxcalculator.vercel.app/salary-tax-2026-27',
+    h1: 'Pakistan Salary Tax 2026-27',
+    intro:
+      'Every salaried employee in Pakistan whose annual taxable income exceeds the tax-free threshold needs to understand how salary income tax is calculated. This guide explains how Pakistan salary tax works for Tax Year 2027 (2026-27), how the applicable tax slabs apply to your taxable income, and how to estimate your own annual tax, monthly tax, and take-home salary.',
+
+    whatIsIt: {
+      heading: 'What Is Salary Income Tax?',
+      body: 'Salary income tax is the tax a salaried employee pays on income earned from employment, calculated under the Income Tax Ordinance, 2001, using the slab rates announced for each tax year. It is charged on annual taxable income — not on gross salary in isolation — and is separate from other income heads such as business or rental income.',
+    },
+
+    slabs: {
+      heading: 'Pakistan Salary Tax Slabs 2026-27',
+      intro:
+        "The table below shows the salaried-individual tax slabs currently used by this website's calculator for Tax Year 2027. Tax applies to your taxable income according to whichever slab it falls into — only the portion of income within a higher slab is taxed at that slab's rate, not your entire income.",
+      columnRange: 'Taxable Income Range',
+      columnCalculation: 'Tax Calculation',
+      columnRate: 'Tax Rate',
+    },
+
+    howCalculated: {
+      heading: 'How Salary Tax Is Calculated',
+      steps: [
+        'Determine your annual salary income — if you are paid monthly, multiply your monthly salary by 12.',
+        'Identify your applicable taxable income, generally your annual salary plus any taxable bonus or allowances.',
+        'Apply the relevant tax slab based on where your taxable income falls in the table above.',
+        "Calculate your estimated annual tax using that slab's fixed amount plus its percentage rate.",
+        'Divide the estimated annual tax by 12 to get an estimated monthly tax amount.',
+        'Subtract the estimated monthly tax from your monthly salary to estimate your monthly take-home salary.',
+      ],
+      note: "Actual payroll deductions can differ from this estimate depending on your employer's payroll process, provident fund or EOBI contributions, and your individual circumstances.",
+    },
+
+    example: {
+      heading: 'Example Salary Tax Calculation',
+      intro: (monthly) =>
+        `Here is a worked example using a monthly salary of ${monthly}, calculated using the same calculation engine used by the calculator on this website — not a manually invented figure.`,
+      monthlySalaryLine: (v) => `Monthly salary: ${v}`,
+      annualSalaryLine: (v) => `Annual salary: ${v}`,
+      taxableIncomeLine: (v) => `Applicable taxable income: ${v}`,
+      annualTaxLine: (v) => `Estimated annual tax: ${v}`,
+      monthlyTaxLine: (v) => `Estimated monthly tax: ${v}`,
+      takeHomeLine: (v) => `Estimated monthly take-home salary: ${v}`,
+    },
+
+    cta: {
+      heading: 'Use Our Pakistan Salary Tax Calculator',
+      body: 'Enter your own monthly or annual salary into the calculator on our homepage to get an estimated annual tax, monthly tax, and take-home salary based on your own figures.',
+      buttonLabel: 'Calculate Your Salary Tax',
+    },
+
+    important: {
+      heading: 'Important Things Employees Should Know',
+      points: [
+        "Annual salary vs. monthly salary: Pakistan's salary tax is calculated on annual taxable income, not a single month's pay — your monthly salary is simply multiplied by 12 to arrive at the annual figure used for tax slabs.",
+        'Taxable income vs. gross salary: taxable income is generally your gross annual salary plus any taxable bonus or allowances. Specific exemptions or allowances may reduce this figure depending on your circumstances, which this calculator does not currently account for.',
+        "Employer withholding: many employers deduct estimated income tax from salary each month and deposit it with FBR on the employee's behalf, so your actual monthly payslip deduction may not exactly match this calculator's estimate.",
+        'Tax rules can change: Pakistani tax rates, slabs, and rules can be revised through a Finance Act or other government notification, sometimes with effect from a new tax year.',
+        "Individual circumstances matter: deductions, credits, exemptions, and your specific employment situation can all affect your final tax position beyond what a general calculator can estimate.",
+      ],
+    },
+
+    faqHeading: 'Frequently Asked Questions',
+
+    links: {
+      privacyText: 'For details on how this calculator handles the information you enter, see our',
+      privacyLinkLabel: 'Privacy Policy',
+      termsText: 'Full terms of use are available in our',
+      termsLinkLabel: 'Terms & Conditions',
+    },
+
+    author: {
+      preparedByLabel: 'Prepared and maintained by',
+      name: 'Syyed Irshad Aslam',
+      websiteLabel: 'Website',
+      websiteName: 'Pakistan Salary Tax Calculator',
+    },
+  },
 };
