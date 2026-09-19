@@ -6,6 +6,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx';
 import TermsAndConditionsPage from './pages/TermsAndConditionsPage.jsx';
 import SalaryTaxGuidePage from './pages/SalaryTaxGuidePage.jsx';
 import IncomeTaxSlabsPage from './pages/IncomeTaxSlabsPage.jsx';
+import SalaryTaxCalculatorPkPage from './pages/SalaryTaxCalculatorPkPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
 // A tiny switch on the current pathname — this is the entire "router
@@ -22,6 +23,8 @@ function renderRoute(pathname) {
       return <SalaryTaxGuidePage />;
     case '/income-tax-slabs-2026-27':
       return <IncomeTaxSlabsPage />;
+    case '/salary-tax-calculator-pakistan':
+      return <SalaryTaxCalculatorPkPage />;
     default:
       return <NotFoundPage />;
   }

@@ -555,4 +555,144 @@ export const text = {
       websiteName: 'Pakistan Salary Tax Calculator',
     },
   },
+
+  salaryTaxCalculatorPk: {
+    metaTitle: 'Pakistan Salary Tax Calculator 2026-27 – Calculate Salary Tax Online',
+    metaDescription:
+      'Calculate Pakistan salary income tax for 2026-27. Estimate annual tax, monthly tax, take-home salary and effective tax rate using the current tax rules.',
+    canonical: 'https://pakistansalarytaxcalculator.vercel.app/salary-tax-calculator-pakistan',
+    h1: 'Pakistan Salary Tax Calculator 2026-27',
+
+    intro: {
+      heading: 'Who Is This Calculator For?',
+      body: 'This salary tax calculator is for salaried employees in Pakistan who want to quickly estimate their income tax, monthly tax deduction, and take-home salary for Tax Year 2027 (1 July 2026 – 30 June 2027). Whether you receive a monthly payslip or are comparing a job offer, it estimates your tax position using the current salaried-individual tax slabs announced under the Finance Act 2026.',
+    },
+
+    concepts: {
+      heading: 'Key Salary and Tax Terms Explained',
+      items: [
+        {
+          term: 'Monthly vs Annual Salary',
+          explanation:
+            "Pakistan's salary income tax is calculated on annual taxable income, not on a single month in isolation. If you earn a fixed monthly salary, the calculator multiplies it by 12 to arrive at your annual figure before applying any slab.",
+        },
+        {
+          term: 'Taxable Income',
+          explanation:
+            'Taxable income is generally your gross annual salary plus any taxable bonus or allowances. Specific exemptions — such as a portion of medical allowance — can reduce taxable income in some cases, but this calculator uses gross salary plus any amounts you enter as a conservative estimate.',
+        },
+        {
+          term: 'Progressive Tax Slabs',
+          explanation:
+            "Pakistan uses a progressive slab system: only the portion of your income within a given slab is taxed at that slab's rate. Moving into a higher slab does not increase the rate applied to your entire income — just the slice above the threshold.",
+        },
+        {
+          term: 'Annual Tax',
+          explanation:
+            "Annual tax is the total estimated income tax owed for the full tax year, calculated by applying the relevant slab to your annual taxable income. It's the baseline figure from which monthly tax and take-home salary are derived.",
+        },
+        {
+          term: 'Monthly Tax',
+          explanation:
+            'Monthly tax shown here is your estimated annual tax divided by 12. Many employers deduct a similar amount from salary each month and deposit it with FBR, but your employer may use a slightly different basis — so payslip deductions may not match exactly.',
+        },
+        {
+          term: 'Take-Home Salary',
+          explanation:
+            "Estimated take-home salary is your monthly gross salary minus your estimated monthly income tax. It does not include EOBI, provident fund contributions, professional tax, or any other payroll deductions your employer may apply — so your actual take-home salary from a payslip is typically slightly lower.",
+        },
+        {
+          term: 'Effective Tax Rate',
+          explanation:
+            'The effective tax rate is your total annual tax as a percentage of your annual taxable income. It is always lower than the highest slab rate that applies to you, because lower slabs — including the 0% bracket — are applied first.',
+        },
+      ],
+    },
+
+    examples: {
+      heading: 'Salary Tax Examples for Tax Year 2027',
+      intro:
+        'The table below shows estimated tax for six common monthly salaries, calculated live using the same engine as the calculator on this website — not hardcoded figures.',
+      columnMonthly: 'Monthly Salary',
+      columnAnnual: 'Annual Salary',
+      columnAnnualTax: 'Annual Tax',
+      columnMonthlyTax: 'Monthly Tax',
+      columnTakeHome: 'Monthly Take-Home',
+      columnEffectiveRate: 'Effective Rate',
+      note: 'Assumes no bonus or other taxable allowances, resident salaried individual. Take-home figures exclude EOBI, provident fund, and other payroll deductions.',
+    },
+
+    howCalculated: {
+      heading: 'How Pakistan Salary Tax Is Calculated',
+      steps: [
+        { label: 'Annual income', detail: 'Monthly salary × 12 (or enter an annual amount directly).' },
+        { label: 'Taxable income', detail: 'Annual salary + any taxable bonus or allowances you add.' },
+        { label: 'Apply slabs', detail: 'Each slice of taxable income is taxed at the rate for its bracket.' },
+        { label: 'Annual tax', detail: 'Sum of the tax on each slice, using the slab table.' },
+        { label: 'Monthly tax', detail: 'Annual tax ÷ 12.' },
+        { label: 'Take-home', detail: 'Monthly salary − monthly tax (before other payroll deductions).' },
+      ],
+      slabNote:
+        'The slab rates used by this calculator are sourced from the Finance Act 2026. For the full slab table with per-bracket examples, see the',
+      slabLinkLabel: 'Income Tax Slabs 2026-27',
+    },
+
+    limitsHeading: 'What This Calculator Does and Does Not Cover',
+    limits: [
+      'It covers salaried individuals who are resident in Pakistan for tax purposes.',
+      'It applies the salaried-individual slab table from the Finance Act 2026 for Tax Year 2027.',
+      'It does not currently account for Zakat, approved pension fund contributions, or the teacher/researcher tax reduction — any of which may reduce your actual tax.',
+      'It does not handle non-resident salaried tax treatment, business income, freelance/export income, or capital gains.',
+      'Actual payroll deductions on your payslip may differ depending on your employer and individual circumstances.',
+    ],
+
+    faqHeading: 'Frequently Asked Questions',
+    faqs: [
+      {
+        q: 'What is a Pakistan salary tax calculator?',
+        a: 'A Pakistan salary tax calculator estimates the income tax owed by a salaried employee based on their annual taxable salary and the applicable tax slabs. This one uses the salaried-individual slab rates from the Finance Act 2026 for Tax Year 2027.',
+      },
+      {
+        q: 'Is this an official FBR salary tax calculator?',
+        a: 'No. This is an independent tool built to help employees estimate their tax position. It is not an official FBR or Government of Pakistan calculator. Always verify your final tax liability with FBR or a qualified tax professional.',
+      },
+      {
+        q: 'How accurate are the salary tax estimates?',
+        a: "The estimates are based on the current salaried-individual tax slabs and assume your full gross salary plus any amounts you add is taxable. They do not account for specific exemptions, credits, or deductions that might apply to your situation. They're useful as a starting point, not as a final tax assessment.",
+      },
+      {
+        q: 'Can I use this to estimate tax on a job offer salary?',
+        a: 'Yes — enter the monthly salary shown in a job offer to see an estimated annual tax, monthly tax deduction, and approximate take-home salary. Keep in mind that provident fund contributions and other deductions will further reduce your actual net pay.',
+      },
+      {
+        q: 'Does the calculator work for bonus income?',
+        a: 'Yes. There is an optional annual bonus field in the calculator. The bonus amount is added to your annual taxable salary before the tax slabs are applied.',
+      },
+      {
+        q: 'What is the minimum salary to pay income tax in Pakistan?',
+        a: 'Under the current slabs, annual taxable salary up to Rs. 600,000 falls in the 0% bracket and carries no income tax liability.',
+      },
+    ],
+
+    internalLinks: {
+      homeCta: {
+        heading: 'Use the Calculator',
+        body: 'Enter your own monthly or annual salary to get a personalised estimate — including a slab-by-slab breakdown of exactly how the figure was arrived at.',
+        buttonLabel: 'Go to the Calculator',
+      },
+      guideLink: 'For a full explanation of how Pakistan salary tax works, see our',
+      guideLinkLabel: 'Pakistan Salary Tax 2026-27 guide',
+      slabsLink: 'To view all current tax slabs with per-bracket examples, see',
+      slabsLinkLabel: 'Pakistan Income Tax Slabs 2026-27',
+      legalLine: (privacyLabel, termsLabel) =>
+        `See our ${privacyLabel} and ${termsLabel} for details on how this calculator works and its limitations.`,
+    },
+
+    source: {
+      preparedByLabel: 'Prepared and maintained by',
+      name: 'Syyed Irshad Aslam',
+      websiteLabel: 'Website',
+      websiteName: 'Pakistan Salary Tax Calculator',
+    },
+  },
 };
