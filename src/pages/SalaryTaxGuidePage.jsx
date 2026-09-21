@@ -177,6 +177,10 @@ export default function SalaryTaxGuidePage() {
 
         <div className="card">
           <p>
+            {content.links.calculatorText}{' '}
+            <Link to="/salary-tax-calculator-pakistan">{content.links.calculatorLinkLabel}</Link>.
+          </p>
+          <p>
             {content.links.privacyText}{' '}
             <Link to="/privacy-policy">{content.links.privacyLinkLabel}</Link>. {content.links.termsText}{' '}
             <Link to="/terms-and-conditions">{content.links.termsLinkLabel}</Link>.

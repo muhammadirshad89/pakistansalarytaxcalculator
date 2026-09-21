@@ -172,6 +172,10 @@ export default function IncomeTaxSlabsPage() {
             {content.links.guideText} <Link to="/salary-tax-2026-27">{content.links.guideLinkLabel}</Link>.
           </p>
           <p>
+            {content.links.calculatorText}{' '}
+            <Link to="/salary-tax-calculator-pakistan">{content.links.calculatorLinkLabel}</Link>.
+          </p>
+          <p>
             {content.links.privacyText}{' '}
             <Link to="/privacy-policy">{content.links.privacyLinkLabel}</Link>. {content.links.termsText}{' '}
             <Link to="/terms-and-conditions">{content.links.termsLinkLabel}</Link>.

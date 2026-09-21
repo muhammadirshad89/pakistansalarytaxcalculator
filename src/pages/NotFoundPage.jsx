@@ -6,6 +6,7 @@ export default function NotFoundPage() {
   useDocumentHead({
     title: 'Page Not Found – Pakistan Salary Tax Calculator',
     description: 'The page you are looking for could not be found.',
+    robots: 'noindex',
   });
 
   return (

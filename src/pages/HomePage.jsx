@@ -46,7 +46,6 @@ export default function HomePage() {
     <>
       <header className="hero">
         <div className="hero-inner">
-          <div className="brand">{text.brand}</div>
           <h1>{text.page.h1}</h1>
           <p>{text.page.intro}</p>
         </div>
