@@ -15,7 +15,6 @@ export default function PrivacyPolicyPage() {
     <>
       <header className="hero">
         <div className="hero-inner">
-          <div className="brand">{text.brand}</div>
           <h1>{content.h1}</h1>
           <p>{content.intro}</p>
         </div>

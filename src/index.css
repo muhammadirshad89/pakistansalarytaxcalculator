@@ -996,6 +996,40 @@ footer.site-footer {
   margin-bottom: 0;
 }
 
+/* ---------- Contact page ---------- */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  min-width: 160px;
+}
+
+.contact-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Salary Tax Calculator PK page ---------- */
 
 .howcalc-steps {

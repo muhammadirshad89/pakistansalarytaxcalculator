@@ -13,7 +13,6 @@ export default function NotFoundPage() {
     <>
       <header className="hero">
         <div className="hero-inner">
-          <div className="brand">{text.brand}</div>
           <h1>Page Not Found</h1>
           <p>The page you're looking for doesn't exist or may have moved.</p>
         </div>

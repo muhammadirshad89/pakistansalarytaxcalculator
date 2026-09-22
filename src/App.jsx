@@ -2,6 +2,8 @@ import { useRoute } from './router/router.js';
 import SiteHeader from './components/SiteHeader.jsx';
 import SiteFooter from './components/SiteFooter.jsx';
 import HomePage from './pages/HomePage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx';
 import TermsAndConditionsPage from './pages/TermsAndConditionsPage.jsx';
 import SalaryTaxGuidePage from './pages/SalaryTaxGuidePage.jsx';
@@ -15,6 +17,10 @@ function renderRoute(pathname) {
   switch (pathname) {
     case '/':
       return <HomePage />;
+    case '/about':
+      return <AboutPage />;
+    case '/contact':
+      return <ContactPage />;
     case '/privacy-policy':
       return <PrivacyPolicyPage />;
     case '/terms-and-conditions':

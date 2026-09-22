@@ -9,8 +9,8 @@ export default function SiteFooter() {
         <Link to="/">{text.nav.home}</Link>
         <Link to="/salary-tax-2026-27">Salary Tax Guide</Link>
         <Link to="/income-tax-slabs-2026-27">Income Tax Slabs</Link>
-        <Link to="/#about">{text.nav.about}</Link>
-        <Link to="/#contact">{text.nav.contact}</Link>
+        <Link to="/about">{text.nav.about}</Link>
+        <Link to="/contact">{text.nav.contact}</Link>
         <Link to="/privacy-policy">{text.nav.privacyPolicy}</Link>
         <Link to="/terms-and-conditions">{text.nav.termsAndConditions}</Link>
       </nav>

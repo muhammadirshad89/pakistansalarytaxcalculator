@@ -93,10 +93,10 @@ export const text = {
   },
 
   contactCta: {
-    heading: 'Need a Custom Website or Calculator?',
-    body: 'Have a project in mind? Contact Syyed Irshad Aslam.',
+    heading: 'Questions, Feedback or Custom Projects?',
+    body: 'Have a question about this calculator, feedback on the website, or a custom web or calculator project in mind? Contact Syyed Irshad Aslam.',
     whatsappLabel: 'Chat on WhatsApp',
-    whatsappMessage: "Hi Irshad, I found your Pakistan Salary Tax Calculator and I'd like to discuss a project.",
+    whatsappMessage: "Hi Irshad, I'm reaching out from your Pakistan Salary Tax Calculator website.",
   },
 
   footer: {
@@ -239,6 +239,63 @@ export const text = {
     about: 'About',
     contact: 'Contact',
     backToCalculator: '← Back to Calculator',
+  },
+
+  aboutPage: {
+    metaTitle: 'About – Pakistan Salary Tax Calculator',
+    metaDescription:
+      'Learn about Pakistan Salary Tax Calculator — a free, independent tool for salaried individuals to estimate salary income tax for Tax Year 2027 (2026-27).',
+    canonical: 'https://pakistansalarytaxcalculator.vercel.app/about',
+    h1: 'About Pakistan Salary Tax Calculator',
+    intro:
+      'Pakistan Salary Tax Calculator is a free, browser-based tool that helps salaried individuals in Pakistan estimate their salary income tax, monthly tax deduction, and take-home salary for Tax Year 2027 (1 July 2026 – 30 June 2027).',
+    sections: [
+      {
+        heading: 'What This Calculator Does',
+        body: 'The calculator estimates annual taxable income, estimated annual tax, estimated monthly tax, estimated monthly take-home salary, and effective tax rate — based on the salaried-individual tax slabs from the Finance Act 2026. Every calculation runs entirely in your browser; no salary data is sent to any server.',
+      },
+      {
+        heading: 'Who Is It For?',
+        body: 'This calculator is for salaried employees in Pakistan who want to quickly understand their likely tax position, compare salary offers, or simply check how much tax might be deducted from their monthly pay. It is not intended for business income, freelance or export income, capital gains, or non-resident tax situations.',
+      },
+      {
+        heading: 'Independent and Not Official',
+        body: 'Pakistan Salary Tax Calculator is an independent tool built for convenience. It is not an official FBR (Federal Board of Revenue) or Government of Pakistan calculator, service, or publication. Users should verify their final tax liability with FBR or a qualified tax professional before filing a tax return or making financial decisions.',
+      },
+      {
+        heading: 'Tax-Year Context',
+        body: 'The current version calculates tax under the salaried-individual slabs introduced by the Finance Act 2026 for Tax Year 2027 (1 July 2026 – 30 June 2027). Tax rules can change each year. The calculator will be updated when new rules are officially confirmed.',
+      },
+      {
+        heading: 'Who Built This?',
+        body: 'Pakistan Salary Tax Calculator was developed and is maintained by Syyed Irshad Aslam, a Graphics Designer and Digital Creative based in Pakistan. The goal was to provide a clear, transparent, and easy-to-use salary tax estimate tool for Pakistani employees.',
+      },
+      {
+        heading: 'Disclaimer',
+        body: 'All calculations are estimates for general informational purposes only. Actual tax liability may vary depending on applicable tax laws, exemptions, allowances, deductions, employer payroll calculations and individual circumstances. This calculator does not constitute professional tax, accounting, financial or legal advice.',
+      },
+    ],
+  },
+
+  contactPage: {
+    metaTitle: 'Contact – Pakistan Salary Tax Calculator',
+    metaDescription:
+      'Contact Pakistan Salary Tax Calculator for questions, feedback, or custom web and calculator projects. Reach Syyed Irshad Aslam via WhatsApp or phone.',
+    canonical: 'https://pakistansalarytaxcalculator.vercel.app/contact',
+    h1: 'Contact Us',
+    intro:
+      'Have a question about the salary tax calculator, feedback about the website, or something else? You are welcome to get in touch.',
+    contactHeading: 'Get in Touch',
+    contactBody:
+      'You can reach Syyed Irshad Aslam, the developer of this website, via WhatsApp or phone. WhatsApp is the fastest way to get a response.',
+    customProjectsHeading: 'Custom Websites and Calculators',
+    customProjectsBody:
+      'Syyed Irshad Aslam also accepts enquiries for custom website and calculator projects. If you have a project in mind, feel free to reach out using the contact details above.',
+    legalNote:
+      'For information about how this website handles your data, please read our',
+    privacyLinkLabel: 'Privacy Policy',
+    termsNote: 'The full terms of use for this website are available in our',
+    termsLinkLabel: 'Terms & Conditions',
   },
 
   legal: {

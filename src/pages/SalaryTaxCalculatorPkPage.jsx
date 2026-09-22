@@ -55,7 +55,6 @@ export default function SalaryTaxCalculatorPkPage() {
     <>
       <header className="hero">
         <div className="hero-inner">
-          <div className="brand">{text.brand}</div>
           <h1>{content.h1}</h1>
           <p>
             Use this free salary tax calculator to estimate your Pakistan income tax, monthly tax
